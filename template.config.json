@@ -31,6 +31,7 @@
     { "find": "Clarion", "replace": "{{service_area}}" },
     { "find": "515-532-4334", "replace": "{{phone_formatted}}" },
     { "find": "+15155324334", "replace": "{{phone_e164}}" },
-    { "find": "info@rgmconstructionia.com", "replace": "{{email}}" }
+    { "find": "info@rgmconstructionia.com", "replace": "{{email}}" },
+    { "find": "https://www.facebook.com/", "replace": "{{facebook}}" }
   ]
 }
