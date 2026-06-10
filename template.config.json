@@ -1,0 +1,36 @@
+{
+  "name": "construction",
+  "build": {
+    "install": "npm ci --no-audit --no-fund",
+    "command": "npm run build",
+    "output": "dist"
+  },
+  "primaryColor": "#d6a036",
+  "colorVariants": [
+    { "find": "#f4c860", "factor": 1.18 },
+    { "find": "#9b6414", "factor": 0.7 },
+    { "find": "214, 160, 54", "rgb": true },
+    { "find": "214,160,54", "rgb": true }
+  ],
+  "logoTargets": [
+    "src/assets/logo.png",
+    "public/favicon.png"
+  ],
+  "removeFiles": ["wrangler.toml"],
+  "replacements": [
+    { "find": "Clarion, Eagle Grove, Hampton, Belmond, Fort Dodge, and nearby communities", "replace": "{{service_area}} and nearby communities" },
+    { "find": "surrounding Iowa communities", "replace": "surrounding communities" },
+    { "find": "Iowa seasons", "replace": "local seasons" },
+    { "find": "RGM Construction", "replace": "{{business_name}}" },
+    { "find": "RGM handles", "replace": "{{business_name}} handles" },
+    { "find": "RGM gave us", "replace": "They gave us" },
+    { "find": "RGM brings", "replace": "{{business_name}} brings" },
+    { "find": "RGM Process", "replace": "Our Process" },
+    { "find": "Clarion, Iowa", "replace": "{{service_area}}" },
+    { "find": "Clarion, IA", "replace": "{{service_area}}" },
+    { "find": "Clarion", "replace": "{{service_area}}" },
+    { "find": "515-532-4334", "replace": "{{phone_formatted}}" },
+    { "find": "+15155324334", "replace": "{{phone_e164}}" },
+    { "find": "info@rgmconstructionia.com", "replace": "{{email}}" }
+  ]
+}
